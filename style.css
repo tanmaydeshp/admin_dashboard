@@ -11,8 +11,10 @@ ul{
     padding: 0;
 }
 .sidebar img{
-    width: 20%;
-    height: 20%;
+    /* width: 20%;
+    height: 20%; */
+    width: 1em;
+    height: 1em;
 }
 .sidebar li{
     display: flex;
@@ -33,7 +35,7 @@ ul{
     gap: 50px;
     flex: 1 1 auto;
     font-size: max(1vw, 20px);
-    padding: 30px;
+    padding: 30px 30px 10px 20px;
     color: white;
 }
 .header{
@@ -48,6 +50,18 @@ ul{
     grid-row: 2/3;
 }
 h3{
-    text-align: center;
+    
     margin: 0;
+}
+
+.dashboard-logo img{
+    width: 2em;
+    height: 2em;
+    
+}
+
+.dashboard-logo{
+    display: flex;
+    align-items: center;
+    font-size:  max(1.25vw, 30px);
 }
