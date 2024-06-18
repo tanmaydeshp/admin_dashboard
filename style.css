@@ -4,6 +4,7 @@
 body{
     padding:0;
     margin:0;
+    color: white;
     
 }
 ul{
@@ -28,7 +29,7 @@ ul{
     height: 100vh;
 }
 .sidebar{
-    background-color:  #0078d7;
+    background-color:  #36393e;
     grid-column: 1/2;
     grid-row: 1/3;
     display: flex;
@@ -38,6 +39,7 @@ ul{
     font-size: max(1vw, 20px);
     padding: 30px 30px 10px 20px;
     color: white;
+    border-right: 2px solid #7289da;
 }
 .header{
     grid-column: 2/3;
@@ -46,6 +48,9 @@ ul{
     grid-template: 1fr 2fr/ 2fr 1fr;
     align-items: center;
     padding: 0 0 0 30px;
+    background-color: #36393e;
+    border-bottom: 2px solid #7289da;
+    color: #7289da
 }
 .header img{
     width: 1.5em;
@@ -96,14 +101,14 @@ ul{
 }
 button{
     color: white;
-    background-color: #0078d7;
+    background-color: #7289da;
     border-radius: 10px;
     padding: 7px;
     width: 5em;
     font-size: medium;
 }
 .content{
-    background-color: slategray;
+    background-color: #424549;
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
@@ -111,24 +116,37 @@ button{
 }
 .projects{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-    border: 1px solid red;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     grid-row: 1/2;
     grid-column: 1/2;
+    gap: 10px;
+}
+.card{
+    height: 150px;
+    width: 80%;
+    border-left: 10px solid #7289da;
+    border-top: 1px solid #7289da;
+    border-right: 1px solid #7289da;
+    border-bottom: 1px solid #7289da;
+    border-radius: 8px;
+    justify-self: center;
+    align-self: center;
+    background-color: #36393e;
 }
 .announcements{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px;
-    background-color: white;
+    background-color: #424549;
     text-align: center;
+    font-size: x-small;
 }
 .announcement{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 300px;
+    width: 150px;
     border-bottom: 1px solid lightgray;
 }
 .trending{
@@ -136,7 +154,8 @@ button{
     flex-direction: column;
     align-items: center;
     padding: 15px;
-    background-color: white;
+    background-color: #424549;
+    font-size: x-small;
 }
 .trend{
     display: flex;
@@ -151,11 +170,6 @@ button{
     border-radius: 100%;
     padding: 5px;
 }
-.card{
-    height: 150px;
-    width: 150px;
-    border: 1px solid red;
-}
 .dashboard-logo img{
     width: 2em;
     height: 2em;
@@ -166,6 +180,7 @@ button{
     display: flex;
     align-items: center;
     font-size:  max(1.25vw, 30px);
+    color:#7289da
 }
 
 h4{
