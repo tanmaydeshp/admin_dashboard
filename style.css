@@ -139,9 +139,10 @@ button{
     justify-self: center;
     align-self: center;
     background-color: #36393e;
-    font-size: small;
+    font-size: max(0.85vw, 9px);
     padding: 5px 10px 5px 20px;
 }
+
 .content-right{
     padding: 10px;
     display: flex;
